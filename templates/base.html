@@ -4,10 +4,66 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Madlibs</title>
+		<link rel="stylesheet" href="/static/style.css" />
+		<title>{% block title %}Madlibs{% endblock %}</title>
 	</head>
 	<body>
+		<section name="navbar">
+			<nav>
+				<div><a href="/" class="navlink">Home</a></div>
+				<div id="collapseTarget">
+					<a href="/storieslist" class="navlink">Want a different story?</a>
+					<table>
+						<tr>
+							<td><a href="">Story1</a></td>
+						</tr>
+						<tr>
+							<td><a href="">Story2</a></td>
+						</tr>
+						<tr>
+							<td><a href="">Story3</a></td>
+						</tr>
+						<tr>
+							<td><a href="">Story4</a></td>
+						</tr>
+						<tr>
+							<td><a href="">Story5</a></td>
+						</tr>
+					</table>
+				</div>
+				<!-- <table>
+					<tr>
+						<th>
+							<a href="/" class="navlink">Home</a>
+						</th>
+						<th>
+							<a href="/storieslist" class="navlink">Pick from stories</a>
+						</th>
+					</tr>
+					<tbody>
+						<tr>
+							<td>Story1</td>
+						</tr>
+						<tr>
+							<td>Story2</td>
+						</tr>
+						<tr>
+							<td>Story3</td>
+						</tr>
+						<tr>
+							<td>Story4</td>
+						</tr>
+						<tr>
+							<td>Story5</td>
+						</tr>
+					</tbody>
+				</table> -->
+			</nav>
+		</section>
 		<main>
+			<!-- Wraps all of main content -->
+			{% block content %}
+
 			<h1>Madlibs</h1>
 			<form action="/story">
 				{% for prompt in prompts %}
@@ -18,6 +74,10 @@
 				{% endfor %}
 				<button>Submit</button>
 			</form>
+
+			{% endblock %}
 		</main>
 	</body>
+
+	<script src="/static/app.js"></script>
 </html>

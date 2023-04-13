@@ -21,3 +21,7 @@ def fill_form():
     
     text = story.generate(request.args)
     return render_template('story.html', text = text)
+
+@app.route('/storieslist')
+def present_stories():
+    return render_template('storieslist.html')

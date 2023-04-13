@@ -1,0 +1,49 @@
+body {
+	background-color: rgb(148, 241, 160);
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: rgb(136, 17, 53);
+	height: fit-content;
+	padding: 30px;
+	align-items: center;
+}
+
+main {
+	padding: 20px;
+}
+
+div {
+	position: relative;
+	display: inline-block;
+}
+
+table {
+	background-color: rgb(136, 17, 53);
+	width: 130px;
+	padding: 15px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 2;
+}
+
+td {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+a {
+	cursor: pointer;
+	padding: 0px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+/* .navlink {
+} */
+
+ul li:first-child {
+	margin-top: 10px;
+}

@@ -1,5 +1,7 @@
 """Madlibs Stories."""
 
+# List of stories:
+# stories = ["Test1", "test2", "test3", "test4", "test5"]
 
 class Story:
     """Madlibs story.
@@ -44,3 +46,11 @@ story = Story(
     """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
+
+# story2 = Story(
+#     ["place", "noun", "verb", "adjective", "plural_noun"],
+#     """Once upon a time in a long-ago {place}, there lived a
+#        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
+# )
+
+# story1 = Story(["occupation", "noun", "verb", "adjective", "noun", "verb", "adjective", "noun", "verb", "noun"], """Today a {occupation} named {noun} came to our school to talk to us about her job. She said the most important skill you need to know to do her job is to be able to {verb} around (a) {adjective} {noun}. She said it was easy for her to learn her job because she loved to {verb} when she was my age--and that helps a lot! If you're considering her profession, I hope you can be near (a) {adjective} {noun}. That's very important! If you get too distracted in that situation you won't be able to {verb} next to (a) {noun}!""")
